@@ -1,0 +1,418 @@
+:root{
+  --formBg:#343F4B;
+  --textColor:#ebe9e9;
+  --primaryColor:#0076A3;
+  --paraColor:#5e6c79;
+  --paraColor:#74828f;
+  --font-family: 'Roboto Serif', serif;
+html{
+  scroll-behavior: smooth;
+}
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Garamond;  
+    background-size: cover;
+
+}
+header{
+  background-color: #fff;
+  position: sticky; top:0;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  padding: 50px;
+  
+}
+/* nav{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px;
+    
+} */
+nav  li{
+    display: inline-block;
+    list-style: none;
+}
+nav  li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding: 20px;
+}
+nav  li a:hover{
+  background-color: #41f00c;
+    border-radius: 50px;
+    box-shadow:  0 0 25px #41f00c,
+              0 0 50px #41f00c,
+              0 0 100px #41f00c;
+    
+}
+
+.home{
+  background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+h1{
+  font-size: 30px;
+}
+
+.na{
+    color: black;
+    margin-left: 30px;
+}
+.na p{
+    color: black;
+    width: 700px;
+    text-align: justify;
+    font-size: 18px;
+}
+img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+
+}
+/* a{
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  text-decoration: none;
+  color: var( --textColor);
+  transition: 0.5s;
+  overflow: visible;
+  margin-right: 50px;
+  
+}
+a:hover {
+  background-color: #b4d823;
+  border-radius: 5rem;
+  box-shadow: 0 0 5px #b4d823,
+            0 0 25px #eef3f4,
+            0 0 50px #eef3f4,
+            0 0 100px #eef3f4;
+} */
+
+.na span{
+  font-size: 50px;
+  color: #41f00c;
+}
+button{
+  font-size: 25PX;
+  padding: 10PX;
+  font-weight: bold;
+  border-radius: 20PX;
+}
+button:hover{
+  border-radius: 50px;
+  background-color: #f1151d;
+  color: wheat;
+  cursor: pointer;
+}
+
+         /* about */
+span{
+    color: rgb(8, 247, 48);
+} 
+h1{
+  color: black;
+  font-weight: bold;
+  /* margin-top: 50px; */
+} 
+.about{
+  display: flex;
+  padding: 10% 8%;
+  text-align: center;
+  background: #fff;
+  
+}
+.about-img img{
+    position: relative;
+    width: 50px;
+}
+.about h3{
+    font-size: 35px;
+    color: rgb(15, 14, 14);
+}
+.about p{
+  text-align: justify;
+  color: black;
+    font-size: 20px;
+}
+.contact a {
+position: relative;
+display: inline-block;
+padding: 25px 30px;
+margin: 40px 0;
+text-decoration: none;
+transition: 0.5s;
+overflow: visible;
+margin-right: 50px;
+}
+
+   /* skills */
+
+   .skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    background-color: #fff;
+  }
+  .skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+  }
+  
+  .text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    height: 40vh;
+    padding: 10px 20px;
+    margin: 10px;
+    color: black;
+    border: 2.5px solid #41f00c;
+    border-radius: 50px;
+    background:  #fff;
+  }
+  .fa-html5{
+    font-size: 70px;
+  }
+  .fa-css3-alt{
+    font-size: 70px;
+  }
+  .fa-js{
+    font-size: 70px;
+  }
+  .fa-bootstrap{
+    font-size: 70px;
+  }
+  .fa-python{
+    font-size: 70px;
+  }
+  .cell p {
+    font-size: 18px;
+    text-align: justify; 
+  }
+  .cell:hover{
+    border: 3px solid white;
+    box-shadow: 10px 10px 10px #41f00c,
+    0 0 5px #41f00c,
+    0 0 10px #41f00c,
+    0 0 15px #41f00c;
+    transform: scale(1.0);  
+    transition-duration: 1s;
+    
+  }
+    
+  
+  
+    /* contact */
+
+
+.contact{
+  background-color: #fff;
+}
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+.container:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("./pandi.jpg") no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter:blur(50px);
+
+}
+.con{
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 19px 5px #41f00c;
+}
+.left{
+  height: 100%;
+  background: url("./pandi.jpg") no-repeat center;
+  background-size: cover;
+}
+.right{
+  padding: 25px 40px;
+}
+h2{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+h2:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+
+}
+.field{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid #41f00c;
+  background-color: rgba(245, 233, 233, 0.926);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+.field:hover{
+  background-color: rgb(218, 228, 220);
+
+}
+.field:focus{
+  background-color: #fff;
+  border: 2px solid rgba(30,85,250,0.47);
+}
+.area{  
+  min-height: 150px;
+}
+.bth{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: .3s;
+}
+.bth:hover{
+  background-color: #27ae60;
+}
+
+
+/* footer */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-content{
+  background-color: black;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.footer-content h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  background-color: black;
+}
+
+.footer-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: black;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+  background-color: black;
+}
+
+.socials li {
+  display: inline-flex;
+  margin: 0 5px;
+  background-color: black;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: black;
+}
+
+.socials a:hover {
+  color: #eed220;
+}
+
+
+ 
+
+
+@media (width < 750px) {
+header {
+    display: block;
+  }
+
+  .home {
+    left: 0;
+  }
+
+
+  .cells {
+    grid-area: 1/1/2/2;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
